@@ -5,6 +5,8 @@ import Link from 'next/link'
 import React from 'react'
 import { NeonIcon } from './_icons/Neon'
 import { ClerkIcon } from './_icons/Clerk'
+import { subscriptionTiersInOrder } from '../constants/SubscriptionTiers'
+import PricingCard from '@/components/cards/PricingCard'
 
 const HomePage = () => {
   return (
@@ -54,7 +56,12 @@ const HomePage = () => {
 
         <h2 className="text-4xl text-center text-balance font-semibold">
           Pricing Software which pays for itself 20x over
-          </h2>
+        </h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-2 max-w-screen-xl mx-auto">
+          {subscriptionTiersInOrder.map((tier) => (
+            <PricingCard key={tier.name} {...tier} />
+          ))}
+        </div>
       </section>
     </>
   )

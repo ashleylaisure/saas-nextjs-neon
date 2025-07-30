@@ -3,9 +3,9 @@ import React from 'react'
 import BrandLogo from '../BrandLogo'
 import { SignedIn, SignedOut, SignInButton } from '@clerk/nextjs'
 
-const NavBar = () => {
+const LandingNavBar = () => {
     return (
-        <header className=" hero-container shadow-xl fixed top-0 w-full z-50 bg-background-light-100 dark:bg-background-dark-100">
+        <header className=" hero-container shadow-xl fixed top-0 z-50 bg-primary-100">
             <nav className="flex-between gap-10 w-full">
                 <div className="mr-auto">
                     <BrandLogo />
@@ -35,4 +35,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default LandingNavBar
