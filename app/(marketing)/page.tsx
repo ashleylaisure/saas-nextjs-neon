@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { NeonIcon } from './_icons/Neon'
 import { ClerkIcon } from './_icons/Clerk'
-import { subscriptionTiersInOrder } from '../constants/SubscriptionTiers'
+import { subscriptionTiersInOrder } from '../../constants/SubscriptionTiers'
 import PricingCard from '@/components/cards/PricingCard'
 
 const HomePage = () => {

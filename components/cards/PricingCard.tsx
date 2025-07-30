@@ -1,4 +1,4 @@
-import { subscriptionTiersInOrder } from '@/app/constants/SubscriptionTiers'
+import { subscriptionTiersInOrder } from '@/constants/SubscriptionTiers'
 import React, { ReactNode } from 'react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
 import { SignUpButton } from '@clerk/nextjs'
